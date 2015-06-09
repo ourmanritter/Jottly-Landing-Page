@@ -1,0 +1,326 @@
+/* Custom CSS Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Table of Contents
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+-Base Styles
+-Typography
+-Buttons
+-Tags
+-Classes
+-IDs
+-Media Queries
+*/
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "adelle-sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000; 
+  background-color: #e1e1e1;
+}
+
+
+/* Typography 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  text-align: left;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #42baad;
+  text-align: left;
+  text-transform: capitalize;
+  margin: 0;
+}
+h3 {
+  font-size: 1.125em;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  margin: -16px 0 30px;
+}
+p {
+  font-size: .875em;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  color: #fff;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-size: .875em;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border-color: transparent;
+  outline: 0;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #fff;
+  border-color: #fff;
+  outline: 0; 
+}
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: #42baad;
+  border-color: #42baad; 
+  height: 44px;
+  line-height: 44px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #42baad;
+  background-color: transparent;
+  border-color: #42baad; 
+}
+
+
+/* Tags
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Responsive image scaling */
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+
+/* Classes 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.logo-headline {
+  /* font-weight: bold;  */
+  color: #42baad;
+}
+
+.text-transform-lower {
+  text-transform: lowercase;
+}
+
+.use-case-img {
+  width: 100%;
+  height: auto;
+}
+
+.closing-headlines {
+  text-align: center;
+}
+
+.footer-button {
+  color: #e1e1e1;
+}
+
+
+/* IDs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #4a5563; 
+  border-bottom: 1px solid #39424c;
+  opacity: .8;
+}
+
+#header-nav {
+  float: right;
+  margin-top: 2%;
+}
+
+#logo {
+  float: left;
+  margin-top: 1%;
+  margin-bottom: .2%;
+}
+
+#hero {
+  clear: both;
+  background-color: #4a5563;
+  background-image: url("../images/jottly_hero_background.png");
+  background-size: cover;
+  min-height: 494px;
+  background-position: center center;
+  margin: 0;
+}
+
+#cta {
+  padding-top: 15%;
+  padding-bottom: 2%;
+}
+
+#h1 {
+  opacity: .8;
+}
+
+#easy {
+  margin: 12% auto 10%;
+}
+
+#easy-img: {}
+
+#h2-easy {
+  margin-top: 11%;
+}
+
+#collaboration {
+  margin: 15% auto 10%;
+}
+
+#collaboration-img {
+  margin-top: -20%;
+}
+
+#security {
+  margin: 15% auto 10%;
+}
+
+#h2-cloud-lock {
+  margin-top: -1%;
+}
+
+#use-cases {
+  margin: 15% auto 10%;
+}
+
+#closing-CTA {
+  text-align: center;
+  margin: 15% auto 15%;
+}
+
+#footer {
+  width: 100%;
+  background-color: #4a5563; 
+  border-top: 1px solid #39424c;
+  opacity: .9;
+}
+
+#footer-nav {
+  float: left;
+  margin-top: 1.5%;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Tablet
+
+  At or smaller than Samsung Galaxy Tab 7 in portrait, iPhone 6 plus in landscape.
+  */
+@media only screen and (max-width: 800px) {
+
+  #logo  {
+    margin-top: 1.5%;
+  }
+
+  #header-nav {
+    margin-top: 3%;
+  }
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    line-height: 1;
+  }
+
+}
+
+/* Mobile/Phablet
+
+  */
+@media only screen and (max-width: 550px) {
+
+  .feature-img {
+    display: none;
+  }
+
+  #logo, #header-nav, #footer-nav {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  #logo {
+    margin-top: 2%;
+  }
+
+  #hero {
+    height: 100vh;
+  }
+  #cta { 
+    padding-top: 45%;
+    padding-bottom: 2%;
+  }
+
+}
+
+/* Smaller Mobile 
+*/
+@media only screen and (max-width: 311px) {
+
+  h1 {
+    font-size: 1em;
+  }
+
+}
+
+
